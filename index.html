@@ -8,13 +8,31 @@
 <ul>
 <li><a href="repository.blamo-0.1.4.zip"> repository.blamo-0.1.4.zip</a></li>
 </ul>
-<address style="font-style:normal;margin-top:5em;">
- Take the github url for your index.html file...
- <li>https://github.com/<font color=red>UserName</font>/<font color=red>ProjectName</font>/blob/master/index.html</li>
- ...and plug it into the link generator at rawgit.com to get a dev link like...
- <li>https://rawgit.com/<font color=red>UserName</font>/<font color=red>ProjectName</font>/master/index.html</li>
- To use your github as a kodi file-source, use that dev link but cut "index.html" of the end:<br>
- <li>https://rawgit.com/<font color=red>UserName</font>/<font color=red>ProjectName</font>/master/</li>
- ...Note you must still use the final "/" slash!!
-</address>
+<pre style="margin-top:5em;">
+To use your github as a kodi file-source:
+
+0) Kodi accepts only very-specific http-data as file-sources: 
+   Thus, you must fake an Apache-style directory listing using 
+   an "index.html" webpage in every directory from which you
+   want Kodi to access using install-from-zip.
+   (Use this html's source as a template.)
+   
+   These instructions assume you just want access to a repo's
+   .zip file located in the root of your github project.
+   
+
+1) Note the github url for your index.html file...
+     https://github.com/<font color=red>UserName</font>/<font color=red>ProjectName</font>/blob/master/index.html
+
+2) Visit rawgit.com and copy/paste the above URL into the box
+   there, to generate rawgit links. Copy the dev link and 
+   visit it in a browser to verify the page looks right.
+   The link should look like:
+     https://rawgit.com/<font color=red>UserName</font>/<font color=red>ProjectName</font>/master/index.html
+
+3) You can now point Kodi to your github using this link, BUT
+   you must chop the "index.html" off the end of it, like so:
+     https://rawgit.com/<font color=red>UserName</font>/<font color=red>ProjectName</font>/master/
+   Note you must retain the final "/" slash!!
+</pre>
 </body></html>
