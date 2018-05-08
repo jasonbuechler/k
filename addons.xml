@@ -317,7 +317,7 @@
 	   + urlresolver
 	**************************
 	-->	
-	<addon id="plugin.video.blamo" version="2.5.5" name="Death Streams" provider-name="Mr.Blamo">
+	<addon id="plugin.video.blamo" version="2.5.6" name="Death Streams" provider-name="Mr.Blamo">
 		<requires>        
 			<import addon="xbmc.python" version="2.19.0"/>
 			<import addon="script.module.pyxbmct" version="1.1.4"/>
@@ -342,7 +342,7 @@
 		</extension>
 	</addon>
 	
-	<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.7" provider-name="Mr Blamo">
+	<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.8" provider-name="Mr Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 		</requires>
@@ -353,7 +353,7 @@
 		</extension>
 	</addon>	
 	
-	<addon id="plugin.video.dsrdplus" version="1.1.3" name="Death Streams RD" provider-name="Mr.blamo">
+	<addon id="plugin.video.dsrdplus" version="1.1.4" name="Death Streams RD" provider-name="Mr.blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0"/>
 			<import addon="script.module.futures" version="2.2.0"/>
@@ -396,7 +396,7 @@
 		</extension>
 	</addon>	
 	
-	<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.4" provider-name="Mr.Blamo">
+	<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.5" provider-name="Mr.Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 		</requires>
