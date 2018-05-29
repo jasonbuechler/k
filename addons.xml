@@ -70,13 +70,14 @@
 					<source>https://gitlab.com/TeamUniversal/modules4all/raw/master/script.module.universalscrapers/</source>
 			</extension>
 	</addon>	
-	
-	<addon id="script.module.urlresolver" name="URLResolver" version="4.0.17" provider-name="Eldorado, tknorris, jsergio">
+		
+	<addon id="script.module.urlresolver" name="URLResolver" version="5.0.16" provider-name="tvaddons">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="plugin.video.youtube" optional="true" />
 			<import addon="script.module.python.twitch" optional="true" />
 			<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+			<import addon="plugin.video.gdrive" optional="true" />
 		</requires>
 		<extension point="xbmc.python.module" library="lib" />
 		<extension point="xbmc.python.pluginsource" library="lib/default.py" />
@@ -84,6 +85,8 @@
 			<platform>all</platform>
 			<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
 			<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+			<forum>https://www.tvaddons.co/forums</forum>
+			<website>https://www.tvaddons.co</website>
 		</extension>
 	</addon>	
 
@@ -505,10 +508,10 @@
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + script.module.resolveurl
 	-->
-	<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="1.8" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
+	<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="2.7" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
-			<import addon="script.module.universalscrapers" version="1.0.0" />
+			<import addon="script.module.universalscrapers" />
 			<import addon="script.module.python.koding.aio" version="0.9.6.6" />
 			<import addon="script.module.beautifulsoup" version="3.2.1" />
 			<import addon="script.module.requests" version="2.9.1" />
@@ -518,16 +521,18 @@
 			<import addon="script.module.resolveurl" />
 		</requires>
 		<extension point="xbmc.python.pluginsource" library="default.py">
-			<provides>video</provides>
+			<provides>audio video</provides>
 		</extension>
 		<extension point="xbmc.service" library="service.py" start="[login|startup]" />
 		<extension point="xbmc.addon.metadata">
-		  <summary lang="en">Big Chocolate Salty Balls</summary>
-		  <description lang="en">Brought to you by Team Deez Nutz</description>
-		  <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
-		  <platform>all</platform>
-			<website>www.noobsandnerds.com</website>
-			<video_guide></video_guide>
+			<summary lang="en">Big Chocolate Salty Balls</summary>
+			<description lang="en">Brought to you by Team Deez Nutz</description>
+			<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
+			The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
+			This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
+			</disclaimer>
+			<platform>all</platform>
+			<license>Beerware rev. 42</license>
 		</extension>
 	</addon>
 	
