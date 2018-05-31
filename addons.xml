@@ -236,7 +236,7 @@
 	   + resolveurl
 	**************************
 	-->	
-	<addon id="plugin.video.placenta" version="1.2.4" name="Placenta" provider-name="Team Afterbirth">
+	<addon id="plugin.video.placenta" version="1.2.6" name="Placenta" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.placenta" />
@@ -266,7 +266,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.module.placenta" name="Placenta Module" version="1.3.2" provider-name="Team Afterbirth">
+	<addon id="script.module.placenta" name="Placenta Module" version="1.3.4" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 		</requires>
@@ -320,7 +320,7 @@
 	   + urlresolver
 	**************************
 	-->	
-	<addon id="plugin.video.blamo" version="2.5.6" name="Death Streams" provider-name="Mr.Blamo">
+	<addon id="plugin.video.blamo" version="2.5.8" name="Death Streams" provider-name="Mr.Blamo">
 		<requires>        
 			<import addon="xbmc.python" version="2.19.0"/>
 			<import addon="script.module.pyxbmct" version="1.1.4"/>
@@ -508,7 +508,7 @@
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + script.module.resolveurl
 	-->
-	<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="2.7" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
+	<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="2.9" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.universalscrapers" />
