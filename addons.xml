@@ -266,7 +266,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.module.placenta" name="Placenta Module" version="1.3.4" provider-name="Team Afterbirth">
+	<addon id="script.module.placenta" name="Placenta Module" version="1.3.5" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 		</requires>
@@ -499,16 +499,15 @@
 
 	<!--
 	  Chocolate Salty Balls
-	  https://github.com/teverz/blamo/tree/master/zips/plugin.video.chocolatesaltyballs
+	  https://github.com/MrBlamo420/Project/tree/master/zips
 	   * plugin.video.chocolatesaltyballs
-	  https://github.com/noobsandnerds/modules4all/tree/master/zips/script.module.python.koding.aio
+	   * script.module.mobdro
 	   * script.module.python.koding.aio
-	  https://
 	   + script.module.universalscrapers 
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + script.module.resolveurl
 	-->
-	<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="2.9" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
+	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="3.2" provider-name="Team Deez Nutz">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.universalscrapers" />
@@ -527,16 +526,13 @@
 		<extension point="xbmc.addon.metadata">
 			<summary lang="en">Big Chocolate Salty Balls</summary>
 			<description lang="en">Brought to you by Team Deez Nutz</description>
-			<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.
-			The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.
-			This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.
-			</disclaimer>
 			<platform>all</platform>
 			<license>Beerware rev. 42</license>
 		</extension>
 	</addon>
 	
-	<addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.4.2" provider-name="Total Revolution, noobsandnerds">
+	<!-- <addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.4.2" provider-name="Total Revolution, noobsandnerds"> -->
+	<addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.1" provider-name="Total Revolution, noobsandnerds">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
 			<import addon="script.module.urlresolver" version="1.2.0"/>
@@ -552,13 +548,27 @@
 			<forum>http://noobsandnerds.com/support/showthread.php?tid=17614</forum>
 			<website>http://totalrevolution.tv</website>
 			<news>Added new class from OptimusGREEN allowing for custom add-on settings</news>
-			<source>https://github.com/totalrevolution/totalrevolution/tree/master/script.module.python.koding.aio</source>
 		</extension>
 	</addon>
 
+	<addon id="script.module.mobdro" name="Mobdro" version="11" provider-name="RACC">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0"/>
+			<import addon="script.module.livestreamer" />
+			<import addon="script.module.requests" />
+			<import addon="script.module.routing" />
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="addon.py" />
+		<extension point="xbmc.addon.metadata">
+			<summary lang="en_gb">Mobdro</summary>
+			<description lang="en_gb">Mobdro</description>
+			<platform>all</platform>
+		</extension>
+	</addon>	
 
 
 
+	
 	<!--
 	**************************
 	  Music Tube
@@ -731,10 +741,10 @@
 	  https://github.com/MrBlamo420/Project/tree/master/zips
 	   * plugin.video.aragon
 	   * script.module.aragon.net
-	   * script.module.aragon
+	   * script.module.aragon <-- not anymore??
 	**************************
 	-->	
-	<addon id="plugin.video.aragon" name="ARAGON LIVE" version="1.0.2" provider-name="RACC/Gandelf">
+	<addon id="plugin.video.aragon" name="Aragon Live" version="1.0.3" provider-name="RACC/Gandelf">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.universalscrapers" version="0.5.5" />
@@ -745,7 +755,7 @@
 			<import addon="script.module.xmltodict" version="0.9.0" />
 			<!--<import addon="script.module.web-pdb" version="1.0"/>-->
 			<import addon="script.module.resolveurl" />
-			<import addon="script.module.aragon" version="1.0" />
+			<import addon="script.module.mobdro" version="11" />
 			<import addon="script.module.aragon.net" version="1.0" />
 		</requires>
 		<extension point="xbmc.python.pluginsource" library="default.py">
@@ -753,10 +763,10 @@
 		</extension>
 		<extension point="xbmc.service" library="service.py" start="[login|startup]" />
 		<extension point="xbmc.addon.metadata">
-		  <summary lang="en">ARAGON LIVE</summary>
-		  <description lang="en">Credit goes to RACC for the scripts used in this addon.This addon is powered by JEN. This addon simply links to websites for content that are freely available on the internet . Use at your own risk!</description>
-		  <disclaimer lang="en">This addon does not host any content.This addon does not form part of the Kodi Foundation. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.</disclaimer>
-		  <platform>all</platform>
+			<summary lang="en">ARAGON LIVE</summary>
+			<description lang="en">Credit goes to RACC for the scripts used in this addon.This addon is powered by JEN. This addon simply links to websites for content that are freely available on the internet . Use at your own risk!</description>
+			<disclaimer lang="en">This addon does not host any content.This addon does not form part of the Kodi Foundation. Please do not seek assistance with this addon from any of the Official Kodi Support Channels.</disclaimer>
+			<platform>all</platform>
 		</extension>
 	</addon>
 
