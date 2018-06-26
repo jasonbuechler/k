@@ -247,6 +247,7 @@
 	   * script.placenta.metadata
 	   * script.placenta.artwork
 	   * script.module.placenta
+	   + script.module.beautifulsoup4
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + resolveurl
 	**************************
@@ -281,15 +282,18 @@
 		</extension>
 	</addon>
 
-	<addon id="script.module.placenta" name="Placenta Module" version="1.4.8" provider-name="Team Afterbirth">
+	<addon id="script.module.placenta" name="Placenta Module" version="1.5.0" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
+			<import addon="script.module.beautifulsoup4"/>
 		</requires>
 		<extension point="xbmc.python.module" library="lib" />
 		<extension point="xbmc.addon.metadata">
 			<platform>all</platform>
 			<summary lang="en">Placenta</summary>
 			<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
+			<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
+			<license>Beerware rev. 42</license>
 		</extension>
 	</addon>
 
@@ -335,7 +339,7 @@
 	   + urlresolver
 	**************************
 	-->	
-	<addon id="plugin.video.blamo" version="2.5.9" name="Death Streams" provider-name="Mr.Blamo">
+	<addon id="plugin.video.blamo" version="2.6.1" name="Death Streams" provider-name="Mr.Blamo">
 		<requires>        
 			<import addon="xbmc.python" version="2.19.0"/>
 			<import addon="script.module.pyxbmct" version="1.1.4"/>
@@ -360,7 +364,7 @@
 		</extension>
 	</addon>
 	
-	<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.8" provider-name="Mr Blamo">
+	<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.9" provider-name="Mr Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 		</requires>
@@ -440,7 +444,7 @@
 	   + urlresolver
 	**************************
 	-->
-	<addon id="plugin.video.neptune" version="1.4.1" name="Neptune Rising" provider-name="Mr.Blamo">
+	<addon id="plugin.video.neptune" version="1.4.2" name="Neptune Rising" provider-name="Mr.Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.neptune.artwork" />
@@ -523,7 +527,7 @@
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + script.module.resolveurl
 	-->
-	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="4.9" provider-name="Team Deez Nutz">
+	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="5.6" provider-name="Team Deez Nutz">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.universalscrapers" />
