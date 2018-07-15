@@ -527,7 +527,7 @@
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + script.module.resolveurl
 	-->
-	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="5.6" provider-name="Team Deez Nutz">
+	<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="7.2" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.universalscrapers" />
@@ -535,7 +535,6 @@
 			<import addon="script.module.beautifulsoup" version="3.2.1" />
 			<import addon="script.module.requests" version="2.9.1" />
 			<import addon="script.module.addon.common" version="2.0.0" />
-			<import addon="script.module.swiftstreamz" />
 			<import addon="script.module.xmltodict" version="0.9.0" />
 			<import addon="script.module.resolveurl" />
 		</requires>
@@ -547,6 +546,7 @@
 			<summary lang="en">Big Chocolate Salty Balls</summary>
 			<description lang="en">Brought to you by Team Deez Nutz</description>
 			<platform>all</platform>
+			<reuselanguageinvoker>false</reuselanguageinvoker>
 			<license>Beerware rev. 42</license>
 		</extension>
 	</addon>
