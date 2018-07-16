@@ -445,7 +445,7 @@
 	   + urlresolver
 	**************************
 	-->
-	<addon id="plugin.video.neptune" version="1.4.7" name="Neptune Rising" provider-name="Mr.Blamo">
+	<addon id="plugin.video.neptune" version="1.4.7b" name="Neptune Rising" provider-name="Mr.Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.neptune.artwork" />
