@@ -630,7 +630,7 @@
 	   * plugin.video.adultswim
 	**************************
 	-->	
-	<addon id="plugin.video.adultswim" name="Adult Swim" version="1.0.6" provider-name="jsergio">
+	<addon id="plugin.video.adultswim" name="Adult Swim" version="1.0.6jb" provider-name="jsergio">
 		<requires>
 			<import addon="xbmc.python" version="2.20.0"/>
 			<import addon="script.module.t1mlib" version="1.0.18"/>
