@@ -8,3 +8,4 @@ forgot to edit ver inside zip xml
 pimped neptune searches too
 fixed Adult Swim!!
 fixed RLSBB scraper to get dated episodes AND grab colbert by Scene designation
+default rlsbb to debridOnly=false
