@@ -253,7 +253,7 @@
 	   + resolveurl
 	**************************
 	-->	
-	<addon id="plugin.video.placenta" version="1.3.8" name="Placenta" provider-name="Team Afterbirth">
+	<addon id="plugin.video.placenta" version="1.3.9" name="Placenta" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.placenta" />
@@ -283,7 +283,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.module.placenta" name="Placenta Module" version="1.6.0d" provider-name="Team Afterbirth">
+	<addon id="script.module.placenta" name="Placenta Module" version="1.6.1b" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.beautifulsoup4"/>
