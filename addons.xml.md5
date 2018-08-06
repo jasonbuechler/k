@@ -11,3 +11,4 @@ fixed RLSBB scraper to get dated episodes AND grab colbert by Scene designation
 default rlsbb to debridOnly=false
 ds update
 placenta update + b-version
+placenta/neptune bumps + b-versions
