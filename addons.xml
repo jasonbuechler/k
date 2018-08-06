@@ -528,7 +528,7 @@
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + script.module.resolveurl
 	-->
-	<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="9.2" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
+	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="9.2" provider-name="Team Deez Nutz">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.universalscrapers" />
