@@ -524,12 +524,12 @@
 	   * script.module.mobdro
 	   * script.module.python.koding.aio
 	   * script.module.swiftstreamz
-	   * plugin.video.SportsDevil
+	   + plugin.video.SportsDevil
 	   + script.module.universalscrapers 
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + script.module.resolveurl
 	-->
-	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="9.2" provider-name="Team Deez Nutz">
+	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="9.6" provider-name="Team Deez Nutz">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.universalscrapers" />
@@ -551,7 +551,7 @@
 			<reuselanguageinvoker>false</reuselanguageinvoker>
 			<license>Beerware rev. 42</license>
 		</extension>
-	</addon>
+	</addon>	
 	
 	<!-- <addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.4.2" provider-name="Total Revolution, noobsandnerds"> -->
 	<addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.1" provider-name="Total Revolution, noobsandnerds">
@@ -590,7 +590,20 @@
 			<platform>all</platform>
 		</extension>
 	</addon>
+		
 	
+	
+	
+	<!--
+	**************************
+	  SportsDevil
+	  https://github.com/MrBlamo420/Project/tree/master/zips
+	   * plugin.video.f4mTester
+	   * script.video.F4mProxy
+	   * script.module.streamlink.base
+	   * script.module.streamlink.crypto
+	**************************
+	-->	
 	<addon id="plugin.video.SportsDevil" version="2018.04.11" name="SportsDevil" provider-name="SportsDevil">
 		<requires>
 			<import addon="xbmc.python" version="2.14.0"/>
@@ -612,8 +625,71 @@
 			<platform>all</platform>
 		</extension>
 	</addon>
+	
+	<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0"/>
+			<import addon="script.video.F4mProxy" version="2.7.1"/>
+		</requires>
+		<extension point="xbmc.python.pluginsource" library="default.py">
+			<provides>video</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<summary>f4mTester</summary>
+			<description></description>
+			<platform>all</platform>
+		</extension>
+	</addon>	
 
+	<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
+		<requires>
+			<import addon="xbmc.python" version="2.1.0" />
+			<import addon="script.module.requests" />
+		</requires>
+		<extension point="xbmc.python.module" library="lib" />
+		<extension point="xbmc.python.pluginsource" library="addon.py">
+			<provides>executable</provides>
+		</extension>
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+			<summary lang="en">Proxy for f4m</summary>
+			<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
+		</extension>
+	</addon>	
+	
+	<addon id="script.module.streamlink.base" name="Streamlink Library" version="2018.07.03" provider-name="Streamlink Devs, Twilight0">
+		<requires>
+			<import addon="xbmc.python" version="2.24.0"/>
+			<import addon="script.module.requests" version="2.12.4"/>
+			<import addon="script.module.futures" version="2.2.0"/>
+			<import addon="script.module.streamlink.crypto" version="1.4.0"/>
+		</requires>
+		<extension point="xbmc.python.module" library="resources/lib/"/>
+		<extension point="xbmc.addon.metadata">
+			<summary>Streamlink Library</summary>
+			<description>Streamlink Library for Kodi</description>
+			<platform>all</platform>
+			<license>Simplified BSD</license>
+			<source>https://github.com/Twilight0/script.module.streamlink.base/</source>
+			<language>en</language>
+		</extension>
+	</addon>
 
+	<addon id="script.module.streamlink.crypto" name="streamlink.crypto" version="1.4.0" provider-name="Streamlink.crypto">
+		<requires>
+			<import addon="xbmc.python" version="2.14.0"/>
+		</requires>
+		<extension point="xbmc.python.module" library="lib" />
+		<extension point="xbmc.addon.metadata">
+			<summary>Pure Python implementation of the cryptographic libraries required by Streamlink</summary>
+			<source>https://github.com/Twilight0/script.module.streamlink.crypto</source>
+			<platform>all</platform>
+			<license>MIT</license>
+		</extension>
+	</addon>
+	
+
+	
 	
 	<!--
 	**************************
