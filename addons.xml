@@ -253,7 +253,7 @@
 	   + resolveurl
 	**************************
 	-->	
-	<addon id="plugin.video.placenta" version="1.4.2" name="Placenta" provider-name="Team Afterbirth">
+	<addon id="plugin.video.placenta" version="1.4.3" name="Placenta" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.placenta" />
@@ -283,7 +283,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.module.placenta" name="Placenta Module" version="1.6.3b" provider-name="Team Afterbirth">
+	<addon id="script.module.placenta" name="Placenta Module" version="1.7.1b" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.beautifulsoup4"/>
@@ -340,7 +340,7 @@
 	   + urlresolver
 	**************************
 	-->	
-	<addon id="plugin.video.blamo" version="2.6.2" name="Death Streams" provider-name="Mr.Blamo">
+	<addon id="plugin.video.blamo" version="2.6.3" name="Death Streams" provider-name="Mr.Blamo">
 		<requires>        
 			<import addon="xbmc.python" version="2.19.0"/>
 			<import addon="script.module.pyxbmct" version="1.1.4"/>
@@ -365,7 +365,7 @@
 		</extension>
 	</addon>
 	
-	<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.9" provider-name="Mr Blamo">
+	<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.2.0" provider-name="Mr Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 		</requires>
@@ -445,7 +445,7 @@
 	   + urlresolver
 	**************************
 	-->
-	<addon id="plugin.video.neptune" version="1.4.8b" name="Neptune Rising" provider-name="Mr.Blamo">
+	<addon id="plugin.video.neptune" version="1.4.9b" name="Neptune Rising" provider-name="Mr.Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.neptune.artwork" />
@@ -837,7 +837,7 @@
 		 </extension>
 	</addon>	
 
-	<addon id="plugin.video.ustv.catchup" name="USTVcatchup" provider-name="mhancoc7" version="0.3.3">
+	<addon id="plugin.video.ustv.catchup" name="USTVcatchup" provider-name="mhancoc7" version="0.3.4">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.requests" version="2.12.4" />
