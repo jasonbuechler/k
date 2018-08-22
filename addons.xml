@@ -31,7 +31,7 @@
 	   * script.module.liveresolver
 	**************************
 	-->
-	<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.13" provider-name="jsergio">
+	<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.15" provider-name="jsergio">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="plugin.video.youtube" optional="true" />
@@ -486,7 +486,7 @@
 		</extension>
 	</addon>	
 	
-	<addon id="script.neptune.metadata" version="1.0.4" name="Neptune Rising Metadata" provider-name="Mr.Blamo">
+	<addon id="script.neptune.metadata" version="1.0.5" name="Neptune Rising Metadata" provider-name="Mr.Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0"/>
 		</requires>
@@ -529,7 +529,7 @@
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + script.module.resolveurl
 	-->
-	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="9.6" provider-name="Team Deez Nutz">
+	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="10.0" provider-name="Team Deez Nutz">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.universalscrapers" />
@@ -837,7 +837,7 @@
 		 </extension>
 	</addon>	
 
-	<addon id="plugin.video.ustv.catchup" name="USTVcatchup" provider-name="mhancoc7" version="0.3.4">
+	<addon id="plugin.video.ustv.catchup" name="USTVcatchup" provider-name="mhancoc7" version="0.3.6">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.requests" version="2.12.4" />
