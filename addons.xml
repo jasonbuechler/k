@@ -253,7 +253,7 @@
 	   + resolveurl
 	**************************
 	-->	
-	<addon id="plugin.video.placenta" version="1.4.3" name="Placenta" provider-name="Team Afterbirth">
+	<addon id="plugin.video.placenta" version="1.4.5" name="Placenta" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.placenta" />
@@ -283,7 +283,7 @@
 		</extension>
 	</addon>
 
-	<addon id="script.module.placenta" name="Placenta Module" version="1.7.2b" provider-name="Team Afterbirth">
+	<addon id="script.module.placenta" name="Placenta Module" version="1.7.4b" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.beautifulsoup4"/>
@@ -729,7 +729,7 @@
 	   * plugin.video.adultswim
 	**************************
 	-->	
-	<addon id="plugin.video.adultswim" name="Adult Swim" version="1.0.6jb" provider-name="jsergio">
+	<addon id="plugin.video.adultswim" name="Adult Swim" version="1.0.8b" provider-name="jsergio">
 		<requires>
 			<import addon="xbmc.python" version="2.20.0"/>
 			<import addon="script.module.t1mlib" version="1.0.18"/>
