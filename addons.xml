@@ -48,7 +48,6 @@
 		</extension>
 	</addon>
 
-
 	<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.0.9.6" provider-name="Team Universal">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
@@ -71,7 +70,7 @@
 				<license>GPL v3</license>
 			</extension>
 	</addon>
-		
+	
 	<addon id="script.module.urlresolver" name="URLResolver" version="5.0.16" provider-name="tvaddons">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
