@@ -8,7 +8,6 @@
 	   * script.module.resolveurl
 	   
 	  Universal Scrapers
-	  https://github.com/teamuniversal/scrapers/tree/master/_modules4all/zips/script.module.universalscrapers
 	   * script.module.universalscrapers
 	  
 	  URLResolver	   
@@ -31,7 +30,7 @@
 	   * script.module.liveresolver
 	**************************
 	-->
-	<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.17" provider-name="jsergio">
+	<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.09" provider-name="jsergio">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="plugin.video.youtube" optional="true" />
@@ -46,38 +45,38 @@
 			<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
 			<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		</extension>
-	</addon>
-
-	<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.0.9.6" provider-name="Team Universal">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-			<import addon="script.module.beautifulsoup" version="3.2.1"/>
-			<import addon="script.module.futures" version="2.2.0"/>
-			<import addon="script.module.requests"/>
-			<import addon="script.module.six"/>
-			<import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
-			<!--	<import addon="repository.universalscrapers"/>	REMEMBER TO REMOVE THIS **EVERY** UPDATE! -->
-			<!--	<import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>	-->
-		</requires>
-		<extension point="xbmc.python.module" library="lib"/>
-		<extension point="xbmc.python.pluginsource" library="lib/default.py">
-			<provides>executable</provides>
-		</extension>
-			<extension point="xbmc.addon.metadata">
-				<platform>all</platform>
-				<summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
-				<description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.</description>
-				<license>GPL v3</license>
-			</extension>
 	</addon>
 	
-	<addon id="script.module.urlresolver" name="URLResolver" version="5.0.16" provider-name="tvaddons">
+	<addon id="script.module.universalscrapers" name="Universal Scrapers" version="1.0.0" provider-name="Team Universal">
+			<requires>
+					<import addon="xbmc.python" version="2.1.0"/>
+					<import addon="script.module.beautifulsoup" version="3.2.1"/>
+					<import addon="script.module.futures" version="2.2.0"/>
+					<import addon="script.module.requests"/>
+					<import addon="script.module.six"/>
+				<import addon="script.module.resolveurl" version="5.0.00" optional="true"/>
+					<!--<import addon="script.mrknow.urlresolver" version="2016.10.30.2" optional="true"/>-->
+			</requires>
+			<extension point="xbmc.python.module" library="lib"/>
+			<extension point="xbmc.python.pluginsource" library="lib/default.py">
+					<provides>executable</provides>
+			</extension>
+			<extension point="xbmc.addon.metadata">
+					<platform>all</platform>
+					<summary lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi.</summary>
+					<description lang="en">Scrape common video host for URL's to be playable in XBMC/Kodi, simplifying addon development of video plugins requiring multi video hosts.
+					</description>
+					<license>GPL v3</license>
+					<source>https://gitlab.com/TeamUniversal/modules4all/raw/master/script.module.universalscrapers/</source>
+			</extension>
+	</addon>	
+	
+	<addon id="script.module.urlresolver" name="URLResolver" version="4.0.17" provider-name="Eldorado, tknorris, jsergio">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="plugin.video.youtube" optional="true" />
 			<import addon="script.module.python.twitch" optional="true" />
 			<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-			<import addon="plugin.video.gdrive" optional="true" />
 		</requires>
 		<extension point="xbmc.python.module" library="lib" />
 		<extension point="xbmc.python.pluginsource" library="lib/default.py" />
@@ -85,8 +84,6 @@
 			<platform>all</platform>
 			<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
 			<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-			<forum>https://www.tvaddons.co/forums</forum>
-			<website>https://www.tvaddons.co</website>
 		</extension>
 	</addon>	
 
@@ -141,14 +138,13 @@
 		</extension>
 		<extension point="xbmc.addon.metadata">
 			<summary>Listen to music, watch videos and view photos from your Google Drive account</summary>
-			<description>Plays music and video from your Google Drive account.	Not affiliated with Google.</description>
+			<description>Plays music and video from your Google Drive account.  Not affiliated with Google.</description>
 			<platform>all</platform>
 		</extension>
 		<extension point="xbmc.service" library="service.py" start="login">
 		</extension>
 	</addon>
 -->		
-	
 	<addon id="script.module.liveresolver" name="LiveResolver" version="0.1.50" provider-name="natko1412">
 	  <requires>
 		<import addon="xbmc.python" version="2.1.0" />
@@ -160,23 +156,9 @@
 	  <extension point="xbmc.addon.metadata">
 		<platform>all</platform>
 		<summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
-		<description lang="en"></description>	 
+		<description lang="en"></description>    
 	  </extension>
 	</addon>
-	
-	<addon id="script.module.beautifulsoup4" name="BeautifulSoup4" version="4.5.3" provider-name="Leonard Richardson (leonardr@segfault.org)">
-		<requires>
-			<import addon="xbmc.python" version="2.25.0"/>
-		</requires>
-		<extension point="xbmc.python.module" library="lib" />
-		<extension point="xbmc.addon.metadata">
-			<summary>HTML/XML parser for quick-turnaround applications like screen-scraping</summary>
-			<description>Beautiful Soup parses arbitrarily invalid SGML and provides a variety of methods and Pythonic idioms for iterating and searching the parse tree.</description>
-			<license>BSD</license>
-			<platform>all</platform>
-			<website>http://www.crummy.com/software/BeautifulSoup/</website>
-		</extension>
-	</addon>	
 
 
 	
@@ -187,19 +169,19 @@
 	   * repository.homer
 	**************************
 	-->	
-	<addon id="repository.homer" name="[COLOR gold]Homer Repository[/COLOR]" version="1.0.0" provider-name="Johannes">
+	<addon id="repository.homer" name="[COLOR gold]Homer Repository[/COLOR]" version="1.0.3" provider-name="Johannes">
 		<extension point="xbmc.addon.repository" name="[COLOR gold]Homer Repository[/COLOR]">
 			<dir>
-				<info compressed="false">http://homer.freeshell.org/kodi/addons.xml</info>
-				<checksum>http://homer.freeshell.org/kodi/addons.xml.md5</checksum>
-				<datadir zip="true">http://dana.ucc.nau.edu/jtb49/kodi/zips/</datadir>
+				<info compressed="false">https://raw.githubusercontent.com/jasonbuechler/k/master/addons.xml</info>
+				<checksum>https://raw.githubusercontent.com/jasonbuechler/k/master/addons.xml.md5</checksum>
+				<datadir zip="true">https://raw.githubusercontent.com/jasonbuechler/k/master/</datadir>
 			</dir>
 		</extension>
 		<extension point="xbmc.addon.metadata">
 			<summary lang="en">The Homer repository</summary>
 			<description lang="en">The Homer repository: the repository of Homer, by Johannes</description>
 			<platform>all</platform>
-			<news>[B]1.0.0[/B][CR]Johannes ftw</news>
+			<news>[B]1.0.3[/B][CR]Johannes ftw</news>
 		</extension>
 	</addon>	
 	
@@ -247,12 +229,11 @@
 	   * script.placenta.metadata
 	   * script.placenta.artwork
 	   * script.module.placenta
-	   + script.module.beautifulsoup4
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + resolveurl
 	**************************
 	-->	
-	<addon id="plugin.video.placenta" version="1.4.5" name="Placenta" provider-name="Team Afterbirth">
+	<addon id="plugin.video.placenta" version="1.2.2" name="Placenta" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.module.placenta" />
@@ -282,22 +263,19 @@
 		</extension>
 	</addon>
 
-	<addon id="script.module.placenta" name="Placenta Module" version="1.7.7c" provider-name="Team Afterbirth">
+	<addon id="script.module.placenta" name="Placenta Module" version="1.3.0" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
-			<import addon="script.module.beautifulsoup4"/>
 		</requires>
 		<extension point="xbmc.python.module" library="lib" />
 		<extension point="xbmc.addon.metadata">
 			<platform>all</platform>
 			<summary lang="en">Placenta</summary>
 			<description>Covenant Fork from Echo/Colossus era with Team Afterbirth's updates and new code.</description>
-			<disclaimer lang="en">The author is not responsible for the use of this addon. The author is not responsible for the content found using this addon. The author does not host or own any content found within this addon.[CR]The author is in no way affiliated with Kodi, Team Kodi, or the XBMC Foundation.[CR]This is a Non-profit resource, organized solely for educational purposes which is protected under the Fair-Use doctrine of the Copyright Act, Specifically section 107, which does promote freedom of expression, by permitting the unlicensed use of copyright-protected works.</disclaimer>
-			<license>Beerware rev. 42</license>
 		</extension>
 	</addon>
 
-	<addon id="script.placenta.artwork" version="1.0.8" name="Placenta Artwork" provider-name="Team Afterbirth">
+	<addon id="script.placenta.artwork" version="1.0.7" name="Placenta Artwork" provider-name="Team Afterbirth">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0"/>
 		</requires>
@@ -339,8 +317,8 @@
 	   + urlresolver
 	**************************
 	-->	
-	<addon id="plugin.video.blamo" version="2.6.3" name="Death Streams" provider-name="Mr.Blamo">
-		<requires>		  
+	<addon id="plugin.video.blamo" version="2.5.5" name="Death Streams" provider-name="Mr.Blamo">
+		<requires>        
 			<import addon="xbmc.python" version="2.19.0"/>
 			<import addon="script.module.pyxbmct" version="1.1.4"/>
 			<import addon="script.module.resolveurl" />
@@ -364,7 +342,7 @@
 		</extension>
 	</addon>
 	
-	<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.2.0" provider-name="Mr Blamo">
+	<addon id="script.module.deathstreams" name="Mr Blamos Common Libraries" version="1.1.7" provider-name="Mr Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 		</requires>
@@ -375,7 +353,7 @@
 		</extension>
 	</addon>	
 	
-	<addon id="plugin.video.dsrdplus" version="1.1.4" name="Death Streams RD" provider-name="Mr.blamo">
+	<addon id="plugin.video.dsrdplus" version="1.1.2" name="Death Streams RD" provider-name="Mr.blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0"/>
 			<import addon="script.module.futures" version="2.2.0"/>
@@ -418,7 +396,7 @@
 		</extension>
 	</addon>	
 	
-	<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.5" provider-name="Mr.Blamo">
+	<addon id="script.module.dsrd" name="Death Stream RD Libraries" version="1.0.4" provider-name="Mr.Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 		</requires>
@@ -444,7 +422,7 @@
 	   + urlresolver
 	**************************
 	-->
-	<addon id="plugin.video.neptune" version="1.4.9b" name="Neptune Rising" provider-name="Mr.Blamo">
+	<addon id="plugin.video.neptune" version="1.3.9" name=" Neptune Rising" provider-name="Mr.Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
 			<import addon="script.neptune.artwork" />
@@ -485,7 +463,7 @@
 		</extension>
 	</addon>	
 	
-	<addon id="script.neptune.metadata" version="1.0.5" name="Neptune Rising Metadata" provider-name="Mr.Blamo">
+	<addon id="script.neptune.metadata" version="1.0.4" name="Neptune Rising Metadata" provider-name="Mr.Blamo">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0"/>
 		</requires>
@@ -518,47 +496,42 @@
 
 	<!--
 	  Chocolate Salty Balls
-	  https://github.com/MrBlamo420/Project/tree/master/zips
+	  https://github.com/teverz/blamo/tree/master/zips/plugin.video.chocolatesaltyballs
 	   * plugin.video.chocolatesaltyballs
-	   * script.module.mobdro <--- ?!?!??
+	  https://github.com/noobsandnerds/modules4all/tree/master/zips/script.module.python.koding.aio
 	   * script.module.python.koding.aio
-	   * script.module.swiftstreamz
-	   * script.module.catchuptv
-	   + plugin.video.SportsDevil
+	  https://
 	   + script.module.universalscrapers 
 	  https://github.com/jsergio123/zips/tree/master/script.module.resolveurl
 	   + script.module.resolveurl
 	-->
-	<addon id="plugin.video.chocolatesaltyballs" name="Chocolate Salty Balls" version="10.4" provider-name="Team Deez Nutz">
+	<addon id="plugin.video.chocolatesaltyballs" name="[COLORorange]Chocolate Salty Balls[/COLOR]" version="1.7" provider-name="[COLORlimegreen]Team Deez Nutz[/COLOR]">
 		<requires>
 			<import addon="xbmc.python" version="2.19.0" />
-			<import addon="script.module.universalscrapers" />
-			<import addon="script.module.python.koding.aio" />
-			<import addon="script.module.beautifulsoup" />
-			<import addon="script.module.requests" />
-			<import addon="script.module.addon.common" />
-			<import addon="script.module.xmltodict" />
-			<import addon="script.module.dateutil" />
-			<import addon="script.module.catchuptv" />
-			<import addon="script.module.resolveurl" />
+			<import addon="script.module.universalscrapers" version="1.0.0" />
+			<import addon="script.module.python.koding.aio" version="0.9.6.6" />
+			<import addon="script.module.beautifulsoup" version="3.2.1" />
+			<import addon="script.module.requests" version="2.9.1" />
+			<import addon="script.module.addon.common" version="2.0.0" />
+			<import addon="script.module.xmltodict" version="0.9.0" />
 			<!--<import addon="script.module.web-pdb" version="1.0"/>-->
-			<!-- no more need for swiftstreamz? -->
+			<import addon="script.module.resolveurl" />
 		</requires>
 		<extension point="xbmc.python.pluginsource" library="default.py">
-			<provides>audio video</provides>
+			<provides>video</provides>
 		</extension>
 		<extension point="xbmc.service" library="service.py" start="[login|startup]" />
 		<extension point="xbmc.addon.metadata">
-			<summary lang="en">Big Chocolate Salty Balls</summary>
-			<description lang="en">Brought to you by Team Deez Nutz</description>
-			<platform>all</platform>
-			<reuselanguageinvoker>false</reuselanguageinvoker>
-			<license>Beerware rev. 42</license>
+		  <summary lang="en">Big Chocolate Salty Balls</summary>
+		  <description lang="en">Brought to you by Team Deez Nutz</description>
+		  <disclaimer lang="en">The author of this addon do not host any of the content which is found and have no affiliation with any of the content providers. This addon simply searches websites for content. Use at your own risk!</disclaimer>
+		  <platform>all</platform>
+			<website>www.noobsandnerds.com</website>
+			<video_guide></video_guide>
 		</extension>
-	</addon>	
+	</addon>
 	
-	<!-- <addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.4.2" provider-name="Total Revolution, noobsandnerds"> -->
-	<addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.1" provider-name="Total Revolution, noobsandnerds">
+	<addon id="script.module.python.koding.aio" name="Python Koding AIO" version="0.9.9.4.2" provider-name="Total Revolution, noobsandnerds">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0"/>
 			<import addon="script.module.urlresolver" version="1.2.0"/>
@@ -574,141 +547,13 @@
 			<forum>http://noobsandnerds.com/support/showthread.php?tid=17614</forum>
 			<website>http://totalrevolution.tv</website>
 			<news>Added new class from OptimusGREEN allowing for custom add-on settings</news>
-		</extension>
-	</addon>
-	
-	<addon id="script.module.swiftstreamz" name="Swift Streamz" version="8" provider-name="RACC">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-			<import addon="script.module.livestreamer" />
-			<import addon="script.module.requests" />
-			<import addon="script.module.routing" />
-		</requires>
-		<extension point="xbmc.python.pluginsource" library="addon.py">
-			<provides>all</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en_gb">SwiftStreamz APK</summary>
-			<description lang="en_gb">SwiftStreamz APK</description>
-			<disclaimer lang="en_gb"></disclaimer>
-			<platform>all</platform>
+			<source>https://github.com/totalrevolution/totalrevolution/tree/master/script.module.python.koding.aio</source>
 		</extension>
 	</addon>
 
-	<addon id="script.module.catchuptv" name="US CatchUp TV" provider-name="Mr.Blamo" version="0.0.2">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0" />
-			<import addon="script.module.requests" />
-		</requires>
-		<extension library="main.py" point="xbmc.python.pluginsource">
-			<provides>all</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary>Catchup on tv shows from a variety of US sources!</summary>
-			<description>Watch freely available full episodes from a variety of US channels! 100% legal!</description>
-			<platform>all</platform>
-		</extension>
-	</addon>	
-	
-	
-	
-	<!--
-	**************************
-	  SportsDevil
-	  https://github.com/MrBlamo420/Project/tree/master/zips
-	   * plugin.video.f4mTester
-	   * script.video.F4mProxy
-	   * script.module.streamlink.base
-	   * script.module.streamlink.crypto
-	**************************
-	-->	
-	<addon id="plugin.video.SportsDevil" version="2018.04.11" name="SportsDevil" provider-name="SportsDevil">
-		<requires>
-			<import addon="xbmc.python" version="2.14.0"/>
-			<import addon="script.module.dateutil" />
-			<import addon="script.module.simplejson" />
-			<import addon="script.module.six" />
-			<import addon="script.module.requests" />
-			<import addon="script.module.streamlink.base" />
-			<import addon="plugin.video.f4mTester" />
-		</requires>
-		<extension point="xbmc.python.pluginsource" library="default.py">
-			<provides>video</provides>
-		</extension>
-		<extension point="xbmc.service" library="service/streamlink_proxy.py" start="startup" />
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en">SportsDevil addon</summary>
-			<description lang="en">Play videos of different ad-financed sports streaming sites.</description>
-			<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-			<platform>all</platform>
-		</extension>
-	</addon>
-	
-	<addon id="plugin.video.f4mTester" name="f4mTester" version="2.7.2" provider-name="Shani">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-			<import addon="script.video.F4mProxy" version="2.7.1"/>
-		</requires>
-		<extension point="xbmc.python.pluginsource" library="default.py">
-			<provides>video</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary>f4mTester</summary>
-			<description></description>
-			<platform>all</platform>
-		</extension>
-	</addon>	
 
-	<addon id="script.video.F4mProxy" name="F4mProxy" version="2.8.7" provider-name="Shani">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0" />
-			<import addon="script.module.requests" />
-		</requires>
-		<extension point="xbmc.python.module" library="lib" />
-		<extension point="xbmc.python.pluginsource" library="addon.py">
-			<provides>executable</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<platform>all</platform>
-			<summary lang="en">Proxy for f4m</summary>
-			<description lang="en">Use this addon to play F4m v1 and v2 streams</description>
-		</extension>
-	</addon>	
-	
-	<addon id="script.module.streamlink.base" name="Streamlink Library" version="2018.07.03" provider-name="Streamlink Devs, Twilight0">
-		<requires>
-			<import addon="xbmc.python" version="2.24.0"/>
-			<import addon="script.module.requests" version="2.12.4"/>
-			<import addon="script.module.futures" version="2.2.0"/>
-			<import addon="script.module.streamlink.crypto" version="1.4.0"/>
-		</requires>
-		<extension point="xbmc.python.module" library="resources/lib/"/>
-		<extension point="xbmc.addon.metadata">
-			<summary>Streamlink Library</summary>
-			<description>Streamlink Library for Kodi</description>
-			<platform>all</platform>
-			<license>Simplified BSD</license>
-			<source>https://github.com/Twilight0/script.module.streamlink.base/</source>
-			<language>en</language>
-		</extension>
-	</addon>
 
-	<addon id="script.module.streamlink.crypto" name="streamlink.crypto" version="1.4.0" provider-name="Streamlink.crypto">
-		<requires>
-			<import addon="xbmc.python" version="2.14.0"/>
-		</requires>
-		<extension point="xbmc.python.module" library="lib" />
-		<extension point="xbmc.addon.metadata">
-			<summary>Pure Python implementation of the cryptographic libraries required by Streamlink</summary>
-			<source>https://github.com/Twilight0/script.module.streamlink.crypto</source>
-			<platform>all</platform>
-			<license>MIT</license>
-		</extension>
-	</addon>
-	
 
-	
-	
 	<!--
 	**************************
 	  Music Tube
@@ -747,7 +592,7 @@
 	   * plugin.video.adultswim
 	**************************
 	-->	
-	<addon id="plugin.video.adultswim" name="Adult Swim" version="1.0.8c" provider-name="jsergio">
+	<addon id="plugin.video.adultswim" name="Adult Swim" version="2.0.1" provider-name="jsergio">
 		<requires>
 			<import addon="xbmc.python" version="2.20.0"/>
 			<import addon="script.module.t1mlib" version="1.0.18"/>
@@ -855,7 +700,7 @@
 		 </extension>
 	</addon>	
 
-	<addon id="plugin.video.ustv.catchup" name="USTVcatchup" provider-name="mhancoc7" version="0.3.6">
+	<addon id="plugin.video.ustv.catchup" name="USTVcatchup" provider-name="mhancoc7" version="0.3.2">
 		<requires>
 			<import addon="xbmc.python" version="2.1.0" />
 			<import addon="script.module.requests" version="2.12.4" />
@@ -872,97 +717,9 @@
 		</extension>
 	</addon>		
 
-	
-	
-	
-	<!--
-	**************************
-	  Aragon Live
-	  https://github.com/MrBlamo420/Project/tree/master/zips
-	   * plugin.video.aragon
-	   * plugin.video.mobdro
-	   * script.module.aragon.net
-	**************************
-	-->	
-	<addon id="plugin.video.aragon" name="Aragon Live" version="1.0.6" provider-name="RACC/Gandelf">
-		<requires>
-			<import addon="xbmc.python" version="2.19.0" />
-			<import addon="script.module.universalscrapers" version="0.5.5" />
-			<import addon="script.module.python.koding.aio" version="0.9.6.6" />
-			<import addon="script.module.beautifulsoup" version="3.2.1" />
-			<import addon="script.module.requests" version="2.9.1" />
-			<import addon="script.module.addon.common" version="2.0.0" />
-			<import addon="script.module.xmltodict" version="0.9.0" />
-			<!--<import addon="script.module.web-pdb" version="1.0"/>-->
-			<import addon="script.module.resolveurl" />
-			<import addon="plugin.video.mobdro" />
-			<import addon="script.module.aragon.net" version="1.0" />
-		</requires>
-		<extension point="xbmc.python.pluginsource" library="default.py">
-			<provides>video</provides>
-		</extension>
-		<extension point="xbmc.service" library="service.py" start="[login|startup]" />
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en">ARAGON LIVE</summary>
-			<platform>all</platform>
-		</extension>
-	</addon>
-
-	<addon id="script.module.aragon.net" name="Aragon Live Net" version="1.2" provider-name="RACC">
-	  <requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-		<import addon="script.module.pyamf" />
-		<import addon="script.module.livestreamer" />
-		<import addon="script.module.requests" />
-		<import addon="script.module.routing" />
-	  </requires>
-	  <extension point="xbmc.python.pluginsource" library="addon.py">
-		<provides>all</provides>
-	  </extension>
-	  <extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-	  </extension>
-	</addon>
-	
-	<addon id="plugin.video.mobdro" name="Mobdro" version="1.2" provider-name="Anonimous">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-			<import addon="script.module.livestreamer" />
-			<import addon="script.module.requests" />
-			<import addon="script.module.routing" />
-		</requires>
-		<extension point="xbmc.python.pluginsource" library="addon.py">
-			<provides>video</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en_gb">Mobdro</summary>
-			<description lang="en_gb">Mobdro</description>
-			<disclaimer lang="en_gb"></disclaimer>
-			<platform>all</platform>
-		</extension>
-	</addon>
-	
-	<addon id="script.module.livestreamer" name="livestreamer" version="1.12.0" provider-name="Christopher Rosell">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-			<import addon="script.module.requests" version="1.1.0" optional="false"/>
-			<import addon="script.module.singledispatch" version="3.4.0.3" optional="false"/>
-			<import addon="script.module.futures" version="2.2.0" optional="false"/>
-		</requires>
-		<extension point="xbmc.python.module" library="lib"/>
-		<extension point="xbmc.addon.metadata">
-			<summary>Livestreamer extracts streams from various services</summary>
-			<description>Livestreamer is a command-line utility that pipes video streams from various services into a video player, such as VLC. The main purpose of Livestreamer is to allow the user to avoid buggy and CPU heavy flash plugins but still be able to enjoy various streamed content. There is also an API available for developers who want access to the video stream data.</description>
-			<platform>all</platform>
-			<license>Simplified BSD</license>
-			<source>https://github.com/chrippa/livestreamer.git</source>
-			<website>http://livestreamer.io</website>
-		</extension>
-	</addon>
 
 
-	
-	
+
 	<!--
 	**************************
 	  Covenant
@@ -1050,71 +807,29 @@
 	<!--
 	**************************
 	  At The Flix
-	  http://mavericktv.net/mavrepo/
-	  https://raw.githubusercontent.com/Maverick53/repo/master/addons.xml
-	  https://github.com/Maverick53/repo/tree/master/plugins
+	  http://mavericktv.net/mavrepo/plugins/plugin.video.AtTheFlix/addon.xml
 	   * plugin.video.AtTheFlix
-	   * script.module.ATFTV
-	   * script.module.ATFlive
 	**************************
 	-->
 
-	<addon id="plugin.video.AtTheFlix" name="[COLORred]At The Flix[/COLOR]" version="4.9" provider-name="Maverick">
+	<addon id="plugin.video.AtTheFlix" name="[COLORred]At The Flix[/COLOR]" version="3.3" provider-name="Maverick">
 		<requires>
-			<import addon="xbmc.python" version="2.19.0" />
-			<import addon="script.module.universalscrapers" version="1.0.0" />
-			<import addon="script.module.python.koding.aio" version="0.9.6.6" />
-			<import addon="script.module.beautifulsoup" version="3.2.1" />
-			<import addon="script.module.requests" version="2.9.1" />
-			<import addon="script.module.addon.common" version="2.0.0" />
-			<import addon="script.module.xmltodict" version="0.9.0" />
-			<import addon="plugin.video.youtube" version="3.0.0"/>
-			<!--<import addon="script.module.web-pdb" version="1.0"/>-->
-			<import addon="script.module.resolveurl" />
-			<import addon="script.module.ATFTV" />
-			<import addon="script.module.ATFlive" />
+			<import addon="xbmc.python" version="2.19.0"/>
+			<import addon="script.module.nanscrapers" version="0.5.5"/>
+			<import addon="script.module.python.koding.aio" version="0.9.6.6"/>
+			<import addon="script.module.beautifulsoup" version="3.2.1"/>
+			<import addon="script.module.requests" version="2.9.1"/>
+			<import addon="script.module.addon.common" version="2.0.0"/>
+			<import addon="script.module.xmltodict" version="0.9.0"/>
+			<import addon="script.module.resolveurl" version="5.0.0.5"/>
 		</requires>
 		<extension point="xbmc.python.pluginsource" library="default.py">
-			<provides>video</provides>
+			<provides>audio video</provides>
 		</extension>
-		<extension point="xbmc.service" library="service.py" start="[login|startup]" />
+		<extension point="xbmc.service" library="service.py" start="[login|startup]"/>
 		<extension point="xbmc.addon.metadata">
 			<summary lang="en">Maverick TV</summary>
 			<description lang="en">Maverick TV</description>
-			<platform>all</platform>
-		</extension>
-	</addon>
-	
-	<addon id="script.module.ATFlive" name="[COLOR red]ATF IPTV Extra[/COLOR]" version="1.2" provider-name="Maverick">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-			<import addon="script.module.livestreamer" />
-			<import addon="script.module.requests" />
-			<import addon="script.module.routing" />
-		</requires>
-		<extension point="xbmc.python.pluginsource" library="addon.py">
-			<provides>all</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en_gb">Maverick</summary>
-			<description lang="en_gb">Maverick</description>
-			<platform>all</platform>
-		</extension>
-	</addon>	
-	
-	<addon id="script.module.ATFTV" name="[COLORred]ATF Live[/COLOR]" version="1.4" provider-name="Maverick">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0"/>
-			<import addon="script.module.livestreamer" />
-			<import addon="script.module.requests" />
-			<import addon="script.module.routing" />
-		</requires>
-		<extension point="xbmc.python.pluginsource" library="addon.py">
-			<provides>all</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en_gb">Maverick</summary>
-			<description lang="en_gb">Maverick</description>
 			<platform>all</platform>
 		</extension>
 	</addon>
@@ -1137,18 +852,18 @@
 		<extension point="xbmc.addon.metadata">
 			<summary>OpenSubtitles by OpenSubtitles.org</summary>
 			<description lang="en">Anonymously search and download subtitles for movies and TV-Series from OpenSubtitles.org without log-in. Search in 75 languages, 4.000.000+ subtitles, daily updates. </description>
-			<disclaimer>Works without log-in</disclaimer>												
+			<disclaimer>Works without log-in</disclaimer>                                               
 			<platform>all</platform>
 			<language></language>
 			<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 			<forum>https://forum.opensubtitles.org/viewtopic.php?f=8&amp;t=15847</forum>
 			<website>http://www.opensubtitles.org</website>
-			<email>admin [at] opensubtitles {dot} org</email>												
+			<email>admin [at] opensubtitles {dot} org</email>                                               
 			<assets>
 				<icon>resources/media/os_logo_512x512.png</icon>
-				<fanart>resources/media/os_fanart.jpg</fanart>				
+				<fanart>resources/media/os_fanart.jpg</fanart>    			
 			</assets>
-			<source>https://github.com/opensubtitles/service.subtitles.opensubtitles_by_opensubtitles</source>	  
+			<source>https://github.com/opensubtitles/service.subtitles.opensubtitles_by_opensubtitles</source>    
 		</extension>
 	</addon>
 
@@ -1162,23 +877,33 @@
 	   * script.realdebrid
 	**************************
 	-->	
-	<addon id="script.realdebrid" name="RealDebrid" version="0.5" provider-name="ptom">
-		<requires>
-			<import addon="script.module.requests" version="2.3.0"/>
-		</requires>
-		<extension point="xbmc.python.pluginsource" library="default.py">
-			<provides>executable</provides>
-		</extension>
-		<extension point="xbmc.python.module" library="lib" />
-		<extension point="xbmc.addon.metadata">
-			<summary lang="en">Unofficial RealDebrid client</summary>
-			<website>http://www.ptom.co.uk</website>
-			<platform>all</platform>
-			<language>en</language>
-			<email>ptom98@gmail.com</email>
-		</extension>
-	</addon>
-	
+        <addon id="script.realdebrid" name="RealDebrid" version="0.5" provider-name="ptom">
+                <requires>
+                        <import addon="script.module.requests" version="2.3.0"/>
+                </requires>
+                <extension point="xbmc.python.pluginsource" library="default.py">
+                        <provides>executable</provides>
+                </extension>
+                <extension point="kodi.context.item">
+                        <menu id="kodi.core.main">
+                                <item library="addon.py">
+                                        <label>Play using RealDebrid</label>
+                                        <visible>Container.Content(episodes) | Container.Content(movies)</visible>
+                                </item>
+                        </menu>
+                </extension>
+                <extension point="xbmc.python.module" library="lib" />
+                <extension point="xbmc.addon.metadata">
+                        <description lang="en">Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</description>
+                        <summary>Unofficial RealDebrid client. Manage your torrents, unrestricted links and view host statuses all within Kodi.</summary>
+                        <news>v0.5 - added "Play using RealDebrid" to context menu</news>
+                        <website>http://www.ptom.co.uk</website>
+                        <platform>all</platform>
+                        <language>en</language>
+                        <email>ptom98@gmail.com</email>
+                </extension>
+        </addon>
+
 	
 	
 	
@@ -1187,7 +912,7 @@
 	  The Joy of Painting
 	  https://github.com/tvaddonsco/tva-release-repo/tree/master/plugin.video.joyofpainting
 	   * plugin.video.joyofpainting
-	   + script.module.liveresolver
+	   * script.module.liveresolver
 	**************************
 	-->		
 	<addon id="plugin.video.joyofpainting" name="The Joy of Painting" provider-name="mhancoc7" version="0.1.1">
@@ -1212,34 +937,6 @@
 
 	<!--
 	**************************
-	  Last Week Tonight
-	  https://github.com/tvaddonsco/tva-release-repo/tree/master/plugin.video.last.week.tonight
-	   * plugin.video.last.week.tonight
-	   + script.module.liveresolver
-	**************************
-	-->	
-	<addon id="plugin.video.last.week.tonight" name="Last Week Tonight" provider-name="mhancoc7" version="0.1.3">
-		<requires>
-			<import addon="xbmc.python" version="2.1.0" />
-			<import addon="script.module.liveresolver"/>
-		</requires>
-		<extension library="main.py" point="xbmc.python.pluginsource">
-			<provides>video</provides>
-		</extension>
-		<extension point="xbmc.addon.metadata">
-			<summary>Last Week Tonight</summary>
-			<description>Please visit [COLOR blue]https://www.tvaddons.co[/COLOR] for addon support! All the best of Last Week Tonight!</description>
-			<platform>all</platform>
-			<forum>https://tvaddons.co/forums/</forum>
-			<website>https://tvaddons.co/</website>
-		</extension>
-	</addon>
-	
-
-
-	
-	<!--
-	**************************
 	  Surveillance Room
 	  https://github.com/maikito26/repository.maikito26.storage
 	   * plugin.video.surveillanceroom
@@ -1247,7 +944,7 @@
 	   * context.surveillanceroom.play
 	**************************
 	-->
-	<addon id="plugin.video.surveillanceroom" name="Surveillance Room" version="1.2.3d" provider-name="jasonbuechler">
+	<addon id="plugin.video.surveillanceroom" name="Surveillance Room" version="1.2.3" provider-name="Maikito26">
 		<requires>
 			<import addon="xbmc.python" version="2.20.0"/>
 			<import addon="script.module.requests" version="2.3.0" optional="false"/>
@@ -1260,8 +957,8 @@
 		<extension point="xbmc.service" library="service.py" start="login"/>
 		<extension point="xbmc.addon.metadata">
 			<platform>all</platform>
-			<summary>Surveillance Room is a full featured IP Camera viewer for up to 6 IP Cameras.	This add-on also supports Foscam IP Cameras APIs.</summary>
-			<description>Originally designed for Foscam HD IP cameras, this addon can now live stream and monitor motion and sound alarms for up to 6 IP Cameras.  The add-on can show the video feed for up to 4 IP Cameras simultaneously, or 6 cameras individaully.	 Motion or sound alarms for Foscam IP Cameras can be made to trigger a preview of the camera, or the preview windows can be called by a button, script or externally.</description>
+			<summary>Surveillance Room is a full featured IP Camera viewer for up to 6 IP Cameras.  This add-on also supports Foscam IP Cameras APIs.</summary>
+			<description>Originally designed for Foscam HD IP cameras, this addon can now live stream and monitor motion and sound alarms for up to 6 IP Cameras.  The add-on can show the video feed for up to 4 IP Cameras simultaneously, or 6 cameras individaully.  Motion or sound alarms for Foscam IP Cameras can be made to trigger a preview of the camera, or the preview windows can be called by a button, script or externally.</description>
 			<disclaimer>This add-on is not affiliated with Foscam. This add-on will modify some settings on the camera itself such as motion and sound detection settings.</disclaimer>
 			<forum>http://forum.kodi.tv/showthread.php?tid=240768</forum>
 			<website>https://github.com/maikito26</website>
