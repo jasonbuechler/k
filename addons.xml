@@ -1306,7 +1306,7 @@
 			<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
 		</extension>
 	</addon>	
-	<addon id="skin.estuary" version="2.0.27" name="Estuary" provider-name="phil65, Ichabod Fletchman">
+	<addon id="skin.estuary" version="2.0.27b" name="Estuary" provider-name="phil65, Ichabod Fletchman">
 		<requires>
 			<import addon="xbmc.gui" version="5.14.0"/>
 		</requires>
