@@ -178,9 +178,19 @@
 		</extension>
 	</addon>	
 
+	<addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.44" provider-name="venomous">
+		<requires>
+			<!-- <import addon="xbmc.python" version="3.0.0"/> -->
+			<import addon="script.module.requests" />
+		</requires>
+		<extension point="xbmc.python.module" library="lib" />
+		<extension point="xbmc.python.pluginsource" library="lib" />
+		<extension point="xbmc.addon.metadata">
+			<platform>all</platform>
+		</extension>
+	</addon>
 
 	
-
 	<!--
 	**************************
 	  HOMER Add-on Repository
