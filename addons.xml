@@ -1178,7 +1178,7 @@
 		</extension>
 		<extension point="xbmc.service" library="service.py" start="startup" />
 		<extension point="xbmc.addon.metadata">
-			<summary>Browse Release[COLOR orange][B]BB[/B][/COLOR]</summary>
+			<summary>Browse ReleaseBB</summary>
 			<description>Stream a wide selection of scene release movies and Tv shows from releaseBB</description>
 			<platform>all</platform>
 			<website>https://bugatsinho.github.io/</website>
